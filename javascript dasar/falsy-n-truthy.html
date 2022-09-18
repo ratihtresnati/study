@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Falsy and Truthy</title>
+</head>
+<body>
+	<script>
+/*
+falsy, value yg ketika dalam konteks boolean dia dianggap false.
+di javascript falsy tidak hanya pada boolean, tetapi di luar data itu juga bisa.
+	data falsy
+	- false (boolean)
+	- 0, -0
+	- "",'',`` (string kosong dianggap false)
+	- null (object dan array di anggap true)
+	- undefined
+	- NaN
+*/
+	document.writeln("data falsy");
+	
+	const data = null; //hasilnya false
+	
+	if(data){
+		document.writeln("true");
+	}else{
+		document.writeln("false");
+	}
+	
+	
+
+</script>
+</body>
+</html>

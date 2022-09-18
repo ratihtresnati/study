@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Operator Logika</title>
+</head>
+<body>
+	<script>
+/*
+operator logika bisa digunakan pada tipe data non boolean
+1. operator logika OR (||)
+	mencari yg nilai benar dari kiri ke kanan
+	jika bernilai benar sama, diambil nilai pertama truthy
+	jika bernilai salah sama, diambil nilai falsy yg terakhir
+*/
+	const person = {
+		firstName: "Ratih",
+		lastName: "Tresnati"
+	};
+	
+	const name = person.firstName || person.lastName;
+	console.log(name); //hasilnya Ratih
+
+		const person2 = {
+		firstName: "",
+		lastName: "Tresnati"
+	};
+	
+	const name2 = person2.firstName || person2.lastName;
+	console.log(name2); //hasilnya Tresnati
+	
+/*
+2. operator logika AND (&&)
+	kebalikan dari or yaitu mengambil nilai pertama yg bernilai falsy
+*/
+	
+	console.info("Ratih" && ""); //hasilnya kosong 
+	console.info("NULL" && null); // hasilnya null
+	console.info("NULL" || null); // hasilnya NULL
+	
+	</script>
+</body>
+</html>

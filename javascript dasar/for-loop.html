@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perulangan For</title>
+</head>
+<body>
+	<script>
+	
+/*
+for(init statement; kondisi; post statement){
+	blok perulangan
+}
+
+	1. init statement hanya dieksekusi sekali
+	2. kondisi akan dicek setiap perulangan jika kondisi bernilai true maka akan terjadi perulangan
+	3. post statement dieksekusi terakhir setelang melakukan perulangan
+	4. jika tidak diisi maka akan dianggap bernilai true
+*/
+
+//	for(;;){
+//		alert("halo");
+//	}
+	
+	let counter = 1;
+
+	for(; counter <= 10 ;){
+		document.writeln(` <p> perulangan ke- ${counter}</p>`); 
+		counter++;
+	} // ada sepuluh perulangan
+	
+	for(let counter2 = 1; counter2 <= 10 ;){
+		document.writeln(` <p> perulangan ke- ${counter2}</p>`); 
+		counter2++;
+	} // hasilnya sama saja, hanya memindahkan let counter ke dalam perulangan for
+	
+	for(let counter3 = 1; counter3 <= 10 ; counter3++){
+		document.writeln(` <p> perulangan ke- ${counter3}</p>`); 
+	} // perulangan for menjadi lebih rapih
+	
+	</script>
+</body>
+</html>
