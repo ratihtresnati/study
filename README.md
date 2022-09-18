@@ -1,2 +1,2 @@
-# javascript
-basic javascript
+# catatan
+1. javascript
