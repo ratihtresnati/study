@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>continue and break</title>
+</head>
+<body>
+	<script>
+/*
+break untuk menghentikan perulangan sedangkan continue untuk lompat ke perulangan selanjutnya
+*/
+	document.writeln("Break pada perulangan while");
+
+	let counter =1;
+	while (true) {
+		document.writeln(`<p>Perulangan ke - ${counter}</p>`);
+		counter++;
+		
+		if (counter > 10) {
+			break
+		}
+	}
+
+	document.writeln("Continue pada program bilangan ganjil");
+	
+	for (let i = 1 ; i <= 100 ; i++) {
+		if (i % 2 === 0){
+			continue; 
+			// jika kondisi bernilai benar maka perulangan akan dihentikan dan lanjut ke perulangan selanjutnya
+		}
+		document.writeln(`<p>Angka Ganjil ${i}</p>`);
+	}
+
+</script>
+</body>
+</html>
